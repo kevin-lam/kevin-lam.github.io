@@ -75,3 +75,55 @@ function scrollTop() {
 	}
 	return (document.documentElement || document.body.parentNode || document.body).scrollTop;
 }
+
+function startPosition() {
+	return scrollTop();
+}
+
+function endPosition(elemID) {
+	var element = document.getElementById(elemID);
+	var offset = element.offsetTop;
+	var currElem = element;
+	while (currElem.offsetParent && currElem.offsetParent != document.body) {
+		currElem = currElem.offsetParent;
+		offset += currElem.offsetTop;
+	} 
+	return offset;
+}
+
+function smoothScroll(elemID) {
+	var startY = startPosition();
+	var stopY = endPosition(elemID);
+	var distance  = stopY > startY ? stopY - startY : startY - stopY;
+  if (distance < 100) {
+  		window.scrollTo(0, stopY);
+  		return;
+  }
+
+  var speed = Math.round(distance / 100);
+  if (speed >= 20) {
+  	speed = 20;
+  }
+  var step = Math.round(distance / 25);
+  var leapY = stopY > startY ? startY + step : startY - step;
+  var timer = 0;
+  if (stopY > startY) {
+ 		for (var i=startY; i<stopY; i+=step) {
+ 			setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
+ 			leapY += step;
+ 			if (leapY > stopY) {
+ 				leapY = stopY;
+ 			}
+ 			timer++;
+ 		}
+ 		return;
+  }
+  for (var i=startY; i > stopY; i-=step) {
+  	setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
+  	leapY -= step; 
+  	if (leapY < stopY) {
+  		leapY = stopY;
+  	}
+  	timer++;
+  }
+}

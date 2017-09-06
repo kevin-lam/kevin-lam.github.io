@@ -27,7 +27,7 @@
 
 	<!-- Scripts 
 	___________________________________________________-->
-	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="script/script.js"></script>
 
 	<!-- Favicon 
 	___________________________________________________-->
@@ -57,9 +57,9 @@
 			<nav class="navbar" id="navbar">
 				<div class="container">
 					<ul class="navbar-list">
-						<li class="navbar-item"><a class="navbar-link" href="#projects">Projects</a></li>
-						<li class="navbar-item"><a class="navbar-link" href="#skills">Skills</a></li>
-						<li class="navbar-item"><a class="navbar-link" href="#contacts">Contacts</a></li>
+						<li class="navbar-item"><a class="navbar-link" onclick="smoothScroll('projects')" href="#projects">Projects</a></li>
+						<li class="navbar-item"><a class="navbar-link" onclick="smoothScroll('skills')" href="#skills">Skills</a></li>
+						<li class="navbar-item"><a class="navbar-link" onclick="smoothScroll('contacts')" href="#contacts">Contacts</a></li>
 						<li class="navbar-item"><a class="navbar-link" href="pdf/Kevin-Lam Resume.pdf">Re&#769sume&#769</a></li>
 					</ul>
 				</div>
@@ -104,7 +104,7 @@
 
 			<section class="skills" id="skills">
 				<div class="container">
-					<h3 class="project-title" id="skills-title">Skills</h3>
+					<h3 class="project-title">Skills</h3>
 					<div class="skill-subsection languages">	
 						<div class="skill-type">
 							<h5 class="skill-type-heading">Languages</h5>
