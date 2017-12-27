@@ -1,7 +1,7 @@
 document.onreadystatechange = function() {
 	if (document.readyState == "complete") {
 		
-		var skillsCopyToClipboard = "Java, C, Python, XML, HTML, CSS, Javascript, SQL, Android, Skeleton, Bootstrap, PyQt, Hadoop: Mapreduce, Git, Mercurial";
+		var skillsCopyToClipboard = "Java, C, Python, XML, HTML, CSS, Javascript, Android, PostGreSQL, ExpressJS, AngularJS, NodeJS, Socket.io, Bootstrap, PyQt, Hadoop: Mapreduce, Git, Mercurial";
 
 		// Variable declaration
 		var body = document.getElementsByTagName("body")[0];

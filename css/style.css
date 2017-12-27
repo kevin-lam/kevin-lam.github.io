@@ -39,7 +39,10 @@
 .icon-database-alt,
 .icon-bootstrap,
 .icon-hadoop,
-.icon-git {
+.icon-git,
+.icon-postgres,
+.icon-angular-alt,
+.icon-nodejs {
 	font-size: 3rem;
 }
 
@@ -168,6 +171,12 @@
 	border-color: green;
 }
 
+.stock-chart-image {
+	transform: translateX(-55vw) translateY(5vh);
+	width: 300%;
+	height: auto;
+}
+
 .twitter-news-image {
 	transform: translateX(-69vw) translateY(8vh);
 	width: 350%;
@@ -211,6 +220,10 @@ ul {
 
 	.restaurando-image {
 		transform: translateY(-2vw);
+	}
+
+	.stock-chart-image {
+		transform: translateX(-28vw) translateY(2vh);
 	}
 
 	.twitter-news-image {
