@@ -63,6 +63,12 @@
 	display: none;
 }
 
+.meridian-image { 
+	transform: translateY(-1.5vw);
+	width: 100%;
+	height: auto;
+}
+
 .portrait-cropper {
 	border-radius: 100%;
 	margin: 0 auto;
