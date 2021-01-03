@@ -31,7 +31,7 @@
 }
 
 .icon-java-bold,
-.icon-c,
+.icon-kotlin,
 .icon-python,
 .icon-html,
 .icon-css,
@@ -147,7 +147,6 @@
 }
 
 .restaurando-image { 
-	transform: translateY(-4vw);
 	width: 100%;
 	height: auto;
 }
@@ -178,15 +177,12 @@
 }
 
 .stock-chart-image {
-	transform: translateX(-55vw) translateY(5vh);
-	width: 300%;
-	height: auto;
+	object-fit: none;
+	transform: translateX(-38%);
 }
 
 .twitter-news-image {
-	transform: translateX(-69vw) translateY(8vh);
-	width: 350%;
-	height: auto;
+	object-fit: cover;
 }
 
 ul {
@@ -229,11 +225,11 @@ ul {
 	}
 
 	.stock-chart-image {
-		transform: translateX(-30vw) translateY(2vh);
+		object-fit: none;
 	}
 
 	.twitter-news-image {
-		transform: translateX(-34vw) translateY(6vw);
+		object-fit: cover;	
 	}
 
 }
