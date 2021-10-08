@@ -4,6 +4,7 @@
     "namespace": "android_app",
     "package_name": "com.lookout.enterprise",
     "sha256_cert_fingerprints":
-    ["60:57:55:DA:F9:92:34:0B:39:4B:3A:4B:FA:3E:F4:13:7B:7F:0B:5E:BB:C9:B8:7F:8C:DF:A8:9E:1D:3A:C7:96"]
+    ["50:EB:E8:3A:9B:BA:EC:B2:37:4A:BA:92:E6:72:67:F1:CE:03:B1:40:2D:98:87:84:51:07:42:6D:7C:4B:B5:24",
+     "60:57:55:DA:F9:92:34:0B:39:4B:3A:4B:FA:3E:F4:13:7B:7F:0B:5E:BB:C9:B8:7F:8C:DF:A8:9E:1D:3A:C7:96"]
   }
 }]
