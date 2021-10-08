@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.lookout.enterprise",
+    "sha256_cert_fingerprints":
+    ["60:57:55:DA:F9:92:34:0B:39:4B:3A:4B:FA:3E:F4:13:7B:7F:0B:5E:BB:C9:B8:7F:8C:DF:A8:9E:1D:3A:C7:96"]
+  }
+}]
